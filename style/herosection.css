@@ -1,0 +1,130 @@
+.herosection {
+  padding-top: 114px;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+.herosection div {
+  width: 48%;
+}
+
+.herosectionleftdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.herosectionleftdiv h1 {
+  font-weight: 900;
+  font-size: 68px;
+  color: #23AA49;
+}
+.herosectionleftdiv p {
+  font-weight: 700;
+  font-size: 26px;
+  color: #1C1C1C;
+}
+
+.downloadnowbutton {
+  font-weight: 600;
+  font-size: 24px;
+  color: #E6EEE9;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  background-color: #23AA49;
+  padding: 24px 48px 24px 48px;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 26px;
+  width: 60%;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 24px 12px 24px 12px;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  color: #E6EEE9;
+  background-color: #23AA49;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(35, 170, 73, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: rgba(35, 170, 73, 0.4862745098);
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+@media (max-width: 1472px) {
+  .herosectionleftdiv h1 {
+    font-weight: 900;
+    font-size: 68px;
+    font-size: 48px;
+  }
+}
+@media (max-width: 850px) {
+  .herosection {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .herosection div {
+    width: 100%;
+  }
+  .herosectionleftdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .herosectionleftdiv h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+  }
+  .herosectionleftdiv p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+.spacing {
+  width: 100%;
+  height: 74px;
+}/*# sourceMappingURL=herosection.css.map */

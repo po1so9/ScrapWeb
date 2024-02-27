@@ -1,0 +1,75 @@
+// Color
+$white-color: #E6EEE9;
+$black-color: #1C1C1C;
+$black-50-color: #8E8E8E;
+$black-30-color: #606060;
+$primary-color: #23AA49;
+
+$font-family: "DM Sans", sans-serif;
+
+$spacing: 10%;
+
+@mixin left-right-margin{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+@mixin font-nav-bar{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@mixin font_desktop_hero{
+    font-weight: 900;
+    font-size: 68px;
+}
+@mixin font_mobile_hero{
+    font-weight: 900;
+    font-size: 32px;
+}
+
+@mixin font_desktop_h1{
+    font-weight: 700;
+    font-size: 36px;
+}
+@mixin font_mobile_h1{
+    font-weight: 700;
+    font-size: 26px;
+}
+
+@mixin font_desktop_h2{
+    font-weight: 700;
+    font-size: 26px;
+}
+@mixin font_mobile_h2{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@mixin font_desktop_h3{
+    font-weight: 600;
+    font-size: 24px;
+}
+@mixin font_mobile_h3{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@mixin font_desktop_body_bold{
+    font-weight: 700;
+    font-size: 20px;
+}
+@mixin font_mobile_body_bold{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@mixin font_desktop_body{
+    font-weight: 400;
+    font-size: 20px;
+}
+@mixin font_mobile_body{
+    font-weight: 400;
+    font-size: 14px;
+}

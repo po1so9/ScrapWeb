@@ -1,0 +1,143 @@
+footer {
+  width: auto;
+  height: auto;
+  padding: 60px 10% 20px 10%;
+  background-color: #CFD6D2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer a {
+  font-weight: 600;
+  font-size: 16px;
+  color: #606060;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+footer a:hover {
+  color: #23AA49;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+.companyinfo {
+  width: 16%;
+}
+
+.otherlinks {
+  width: 16%;
+}
+
+.sociallinks {
+  width: 16%;
+}
+
+.contactus {
+  width: 16%;
+}
+
+#fname, #email, #message {
+  font-weight: 400;
+  font-size: 20px;
+  background-color: #B8BEBA;
+  padding: 10px 10px;
+  border: none;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#fname {
+  height: 26px;
+}
+
+#email {
+  height: 26px;
+}
+
+#message {
+  height: 100px;
+  resize: none;
+}
+
+.sendbutton {
+  font-weight: 600;
+  font-size: 24px;
+  color: #E6EEE9;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  background-color: #23AA49;
+  padding: 10px 0px;
+}
+
+.sendbutton {
+  font-weight: 700;
+  font-size: 26px;
+  width: 40%;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 0px;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  color: #E6EEE9;
+  background-color: black;
+}
+
+.sendbutton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sendbutton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sendbutton::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.sendbutton::after {
+  background-color: rgba(0, 0, 0, 0.4862745098);
+}
+
+.sendbutton:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+@media (max-width: 850px) {
+  footer {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .companyinfo {
+    width: 100%;
+  }
+  .otherlinks {
+    width: 100%;
+  }
+  .sociallinks {
+    width: 100%;
+  }
+  .contactus {
+    width: 100%;
+  }
+}/*# sourceMappingURL=footer.css.map */
