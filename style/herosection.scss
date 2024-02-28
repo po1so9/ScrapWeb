@@ -15,8 +15,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    span{
+        height: 100px;
+    }
+    p{
+        margin-top: 300px
+    }
     h1{
         @include font_desktop_hero;
+        font-size: 56px;
         color: $primary-color;
         // height: 40vh;
     }
@@ -96,7 +103,7 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
     .herosection{
         align-items: center;
         justify-content: center;
@@ -112,6 +119,12 @@
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
+        span{
+            height: 150px;
+        }
+        p{
+            margin-top: 0px;
+        }
         h1{
             text-align: center;
             @include font_mobile_hero;
@@ -132,4 +145,48 @@
 .spacing{
     width: 100%;
     height: 74px;
+}
+
+@media (max-width: 600px) {
+    .herosectionleftdiv{
+        span{
+            height: 150px;
+        }
+        p{
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .herosectionleftdiv{
+        span{
+            height: 150px;
+        }
+        p{
+            margin-top: 100px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .herosectionleftdiv{
+        span{
+            height: 150px;
+        }
+        p{
+            margin-top: 100px;
+        }
+        h1{
+            @include font_desktop_hero;
+            font-size: 26px;
+            color: $primary-color;
+            // height: 40vh;
+        }
+        .btn{
+            font-size: 12px;
+            margin-bottom: 50px;
+            padding: 12px 10px;
+        }
+    }
 }

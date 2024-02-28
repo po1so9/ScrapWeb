@@ -15,9 +15,16 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.herosectionleftdiv span {
+  height: 100px;
+}
+.herosectionleftdiv p {
+  margin-top: 300px;
+}
 .herosectionleftdiv h1 {
   font-weight: 900;
   font-size: 68px;
+  font-size: 56px;
   color: #23AA49;
 }
 .herosectionleftdiv p {
@@ -94,7 +101,7 @@
     font-size: 48px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   .herosection {
     align-items: center;
     justify-content: center;
@@ -109,6 +116,12 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+  }
+  .herosectionleftdiv span {
+    height: 150px;
+  }
+  .herosectionleftdiv p {
+    margin-top: 0px;
   }
   .herosectionleftdiv h1 {
     text-align: center;
@@ -127,4 +140,40 @@
 .spacing {
   width: 100%;
   height: 74px;
+}
+
+@media (max-width: 600px) {
+  .herosectionleftdiv span {
+    height: 150px;
+  }
+  .herosectionleftdiv p {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .herosectionleftdiv span {
+    height: 150px;
+  }
+  .herosectionleftdiv p {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 360px) {
+  .herosectionleftdiv span {
+    height: 150px;
+  }
+  .herosectionleftdiv p {
+    margin-top: 100px;
+  }
+  .herosectionleftdiv h1 {
+    font-weight: 900;
+    font-size: 68px;
+    font-size: 26px;
+    color: #23AA49;
+  }
+  .herosectionleftdiv .btn {
+    font-size: 12px;
+    margin-bottom: 50px;
+    padding: 12px 10px;
+  }
 }/*# sourceMappingURL=herosection.css.map */
