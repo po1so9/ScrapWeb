@@ -1,0 +1,80 @@
+.sectionsimplicitymatters {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.sectionsimplicitymatters div {
+  width: 48%;
+}
+.sectionsimplicitymatters div img {
+  margin-bottom: 12px;
+}
+.sectionsimplicitymatters article {
+  width: 48%;
+}
+
+.feature2leftdiv {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.feature2leftdiv h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #8E8E8E;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.feature2leftdiv h2 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #1C1C1C;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.feature2leftdiv p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #606060;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.feature2rightdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+  .sectionsimplicitymatters {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionsimplicitymatters div {
+    width: 100%;
+    text-align: center;
+  }
+  .sectionsimplicitymatters article {
+    width: 100%;
+  }
+  .feature2rightdiv {
+    margin-bottom: 12px;
+  }
+  .feature2leftdiv h3 {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .feature2leftdiv h2 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .feature2leftdiv p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=feature2.css.map */

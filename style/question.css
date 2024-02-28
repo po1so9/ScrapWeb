@@ -1,0 +1,68 @@
+.sectionquestion {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.sectionquestion header h1 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.answers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.answercard {
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1.5px solid #ffffff;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  border-radius: 12px;
+  transition: all 0.5s;
+  padding: 16px;
+  width: 320px;
+  height: 220px;
+  margin: 12px 0px 12px 0px;
+  text-align: start;
+  background-color: #E6EEE9;
+  -webkit-tap-highlight-color: transparent;
+}
+.answercard h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #1C1C1C;
+}
+.answercard ul li {
+  font-size: 16px;
+  color: #606060;
+}
+
+.answercard:hover {
+  border: 1.5px solid #23AA49;
+  transform: scale(1.05);
+}
+
+.answercard:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+@media (max-width: 850px) {
+  .answercard {
+    width: 100%;
+    height: auto;
+  }
+  .answercard h3 {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .answercard ul li {
+    font-size: 14px;
+  }
+  .sectionquestion div h1 {
+    font-weight: 700;
+    font-size: 26px;
+  }
+}/*# sourceMappingURL=question.css.map */
